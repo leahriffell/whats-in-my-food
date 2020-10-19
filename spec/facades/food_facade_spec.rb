@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe FoodFacade   do
+RSpec.describe FoodFacade do
   it 'can return list of foods that have a specific ingredient' do
     foods = FoodFacade.search_for('sweet potatoes')
 
