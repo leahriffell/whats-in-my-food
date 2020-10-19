@@ -3,8 +3,8 @@
 <h3>Search results: <%= @num_result %></h3>
 
 <% @foods.each do |food| %>
-  <%= food.description %>
-  <%= food.brand_owner %>
-  <%= food.gtin_upc_code %>
-  <%= food.ingredients %>
+  <%= Brand onwer: #{food.brand_owner} %>
+  <%= Description: #{food.description} %>
+  <%= GTIN/UPC code: #{food.gtin_upc_code} %>
+  <%= Ingredients: #{food.ingredients} %>
 <% end %>
