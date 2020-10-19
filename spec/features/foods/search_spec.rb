@@ -15,6 +15,7 @@ RSpec.describe 'Food Search Results' do
       expect(page).to have_content('Brand owner: The Pictsweet Company')
       expect(page).to have_content('Description: SWEET POTATOES')
       expect(page).to have_content('GTIN/UPC code: 070560951975')
+      expect(page).to have_content('Ingredients: SWEET POTATOES.')
     end
   end
 end
