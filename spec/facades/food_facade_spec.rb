@@ -13,4 +13,8 @@ RSpec.describe FoodFacade do
     expect(first_food.brand_owner).to be_a(String)
     expect(first_food.ingredients).to be_a(String)
   end
+
+  it 'can return number of search results for a specific ingredient' do
+    expect(FoodFacade.num_result_for('sweet potatoes')).to eq(38680)
+  end
 end

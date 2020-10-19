@@ -6,5 +6,6 @@ class FoodFacade
   end
 
   def self.num_result_for(ingredient)
+    FoodService.by_ingredient(ingredient)[:totalHits]
   end
 end

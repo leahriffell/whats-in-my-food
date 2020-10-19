@@ -11,11 +11,12 @@ RSpec.describe 'Food Search Results' do
     expect(current_path).to eq(foods_path)
     expect(page).to have_content('Search results: 38680')
     expect(page).to have_css('.food', count: 10)
+
     within('#food-070560951975') do
-      expect(page).to have_content('Brand owner: The Pictsweet Company')
-      expect(page).to have_content('Description: SWEET POTATOES')
-      expect(page).to have_content('GTIN/UPC code: 070560951975')
-      expect(page).to have_content('Ingredients: SWEET POTATOES.')
+      expect(page).to have_content('The Pictsweet Company')
+      expect(page).to have_content('SWEET POTATOES')
+      expect(page).to have_content('070560951975')
+      expect(page).to have_content('SWEET POTATOES.')
     end
   end
 end
