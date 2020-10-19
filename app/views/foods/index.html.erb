@@ -3,7 +3,7 @@
 <h3>Search results: <%= @num_result %></h3>
 
 <% @foods.each do |food| %>
-  <div id="food<%= food.gtin_upc_code" %>>
+  <div class="food" id="food-<%= food.gtin_upc_code %>">
     <h5><%= food.description %></h5><br>
     <%= food.brand_owner %><br>
     <%= food.gtin_upc_code %><br>
